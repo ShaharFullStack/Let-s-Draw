@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script defer src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Let's Draw!</h1>
+
+    <div id="Container">
+        <button id="colorBtn" style="background-color: red;" onclick="changeColor('red')"> Red </button>
+        <button id="colorBtn" style="background-color: green;" onclick="changeColor('green')"> Green </button>
+        <button id="colorBtn" style="background-color: blue;" onclick="changeColor('blue')"> Blue </button>
+        <button id="colorBtn" style="background-color: yellow;" onclick="changeColor('yellow')"> Yellow </button>
+        <button id="colorBtn" style="background-color: purple;" onclick="changeColor('purple')"> Purple </button>
+        <button id="colorBtn" style="background-color: pink;" onclick="changeColor('pink')"> Pink </button>
+        <button id="colorBtn" style="background-color: cyan;" onclick="changeColor('cyan')"> Cyan </button>
+        <button id="colorBtn" style="background-color: white;" onclick="changeColor('white')"> White </button>
+        
+        <button id="thicknessBtn" onclick="changeThickness(3)">Very Thin</button>
+        <button id="thicknessBtn" onclick="changeThickness(8)">Thin</button>
+        <button id="thicknessBtn" onclick="changeThickness(15)">Thick</button>
+        <button id="thicknessBtn" onclick="changeThickness(24)">Thicker</button>
+        <button id="thicknessBtn" onclick="changeThickness(36)">Very Thick</button>
+    </div>
+    <span>
+        <button onclick="clearAll()">Clear All</button>
+        <button onclick="randomColor()">Random Color</button>
+        <button onclick="randomLetter()">Random Letter</button>
+    </span>
+    <br>
+    <canvas id="myCanvas" width="1000" height="400" onmouseenter="mark()" onmousedown="mark()"
+        onmousemove="paint(event)">
+    </canvas><br><br>
+</body>
+
+</html>
